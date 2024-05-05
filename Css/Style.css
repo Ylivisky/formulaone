@@ -1,0 +1,147 @@
+/* https://color.adobe.com/es/search?q=formula%201 */
+/* #BF090C Rojo
+#120E10 Negro
+#A61327 Rojo oscuro
+#F3C842 Amarillo
+#393939 Gris */
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #BF090C;
+}
+
+.img-homepage {
+    width: 20%;
+    height: 20%;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;    
+    list-style-type: none;
+}
+
+li {
+    margin: 0.75rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: #120E10;
+}
+
+footer {
+    background-color: #120E10;
+    height: 9;
+}
+
+footer p {
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    padding: 2rem;
+    size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    align-content: center;
+}
+
+header nav img{
+    display: inline;
+    align-content: center;
+    margin-left: 40%;
+}
+
+.imagen-equipo {
+    width: 35%;
+    height: 35%;
+    align-content: center;
+}
+
+.imagen-historia {
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-left: 45%;
+    font-size: 2rem;
+    color: white;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    align-items: center;
+    margin-left: 5.5%;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.sbmt-btn {
+    width: 10rem;
+    margin-left: 45%;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
