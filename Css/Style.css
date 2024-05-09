@@ -107,7 +107,6 @@ h1{
 /* ----------------pilotos---------------- */
 
 .pilotos-container{
-    width: 90%;
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
     padding: 2rem 0 2rem;
@@ -137,14 +136,12 @@ h1{
 .pilt-sct ul li img{
     justify-content: center;
     margin: 0 auto 1rem;
-    width: 40%;
     height: auto;
     box-shadow: 0.4rem 0.5rem 0.5rem black;
     border: 2px solid #F3C842;
 }
 
 .pilt-sct ul li p{
-    font-size: 1.7rem;
     color: white;
     font-family: "inter";
     text-align: center;
@@ -155,7 +152,6 @@ h1{
 /* ----------------pistas---------------- */
 
 .pistas-container{
-    width: 95%;
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
     padding: 2rem 0 2rem;
@@ -164,12 +160,10 @@ h1{
 .pistas-container ul{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     margin: 0 2rem 0 0;
 }
 
 .pistas-container ul li{
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +173,6 @@ h1{
 .pistas-container ul li h2{
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
 }
 
 .pistas-container ul li img{
@@ -192,8 +185,7 @@ h1{
 /* ----------------equipos---------------- */
 
 .equipos-container{
-    width: 95%;
-    margin: 2rem auto 9rem;
+    margin: 2rem auto 2rem;
     box-shadow: 0 0 0.6rem black;
     padding: 2rem 0 2rem;
 }
@@ -201,12 +193,10 @@ h1{
 .equipos-container ul{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     margin: 0 2rem 0 0;
 }
 
 .equipos-container ul li{
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +206,6 @@ h1{
 .equipos-container ul li h2{
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
 }
 
 .equipos-container ul li img{
@@ -229,19 +218,13 @@ h1{
 /* ----------------contacto---------------- */
 
 .contact-container{
-    width: 85%;
-    margin: 2rem auto 11rem;
+    margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
     padding: 2rem 0 2rem;
 }
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "map formulario"
-    ;
 }
 
 .map{
@@ -259,7 +242,6 @@ h1{
 .map h2{
     width: auto;
     text-align: center;
-    font-size: 3.5rem;
 }
 
 .map iframe{
@@ -278,23 +260,15 @@ h1{
 
 .input-labels{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
 .input-labels div{
     display: flex;
     flex-direction: column;
-    width: 45%;
     margin: 0 1rem;
 }
 
-.input-labels div input{
-    padding: 0.5rem;
-}
-
 .formulario label{
-    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -310,7 +284,6 @@ h1{
 }
 
 .sbmt-btn {
-    font-size: 2rem;
     font-weight: 700;;
     padding: 0.5rem 2rem;
     border-radius: 20%;
@@ -473,7 +446,6 @@ svg {
     /* --------contacto-------- */
     .contact-container{
         width: 100%;
-        margin: 2rem auto 2rem;
     }
 
     .contact-grid{
@@ -520,10 +492,6 @@ svg {
     .formulario label{
         font-size: 3rem;
         text-align: center;
-    }
-
-    .message-area textarea{
-        width: 90%;
     }
 
     .sbmt-btn {
@@ -640,7 +608,6 @@ svg {
     /* --------contacto-------- */
     .contact-container{
         width: 100%;
-        margin: 2rem auto 2rem;
     }
 
     .contact-grid{
@@ -675,9 +642,7 @@ svg {
     }
 
     .input-labels div{
-        flex-direction: column;
         width: 90%;
-        margin:0 0 1rem;
     }
 
     .input-labels div input{
@@ -687,10 +652,6 @@ svg {
     .formulario label{
         font-size: 3rem;
         text-align: center;
-    }
-
-    .message-area textarea{
-        width: 90%;
     }
 
     .sbmt-btn {
@@ -743,13 +704,96 @@ svg {
         width: 25%;
     }
 
-    
-
-
     /* --------pilotos-------- */
+    .pilotos-container{
+        width: 90%;
+    }   
+
+    .pilt-sct ul li img{
+        width: 40%;
+    }
+    
+    .pilt-sct ul li p{
+        font-size: 1.7rem;
+    }
+
     /* --------pistas-------- */
+    .pistas-container{
+        width: 95%;
+    }
+    
+    .pistas-container ul{
+        justify-content: center;
+    }
+
+    .pistas-container ul li{
+        width: 20%;
+    }
+    
+    .pistas-container ul li h2{
+        font-size: 2.5rem;
+    }
+
     /* --------equipos-------- */ 
+    .equipos-container{
+        width: 95%;
+    }
+    
+    .equipos-container ul{
+        justify-content: center;
+    }
+
+    .equipos-container ul li{
+        width: 20%;
+    }
+    
+    .equipos-container ul li h2{
+        font-size: 2.5rem;
+    }
+
     /* --------contacto-------- */
+    .contact-container{
+        width: 85%;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "map formulario"
+        ;
+    }
+    
+    .map h2{
+        font-size: 3.5rem;
+    }
+
+    .input-labels{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .input-labels div{
+        width: 45%;
+    }
+
+    .input-labels div input{
+        padding: 0.7rem;
+    }
+
+    .formulario label{
+        font-size: 2.5rem;
+    }
+
+    .sbmt-btn{
+        font-size: 2rem;
+    }
+
+    /* --------footer------- */
+    .lfooter{
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
