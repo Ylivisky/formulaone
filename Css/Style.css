@@ -5,18 +5,22 @@
 #F3C842 Amarillo
 #393939 Gris */
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html{
     font-size: 62.5%;
     /* 1rem = 10px */
 }
 
-/* header */
+body{
+    background-color: #BF090C;
+}
+
+/* ----------------header---------------- */
 
 .img-homepage{
     width: 30%;
@@ -28,41 +32,35 @@ header ul li {
     text-align: center;
 }
 
-img {
-    width: 20%;
-    height: auto;
-}
+/* ----------------index/mainpage---------------- */
 
-/* main */
-
-main {
-    width: 100%;
-    background-color: #BF090C;
-    margin-bottom: 0;
-    padding: 0 0 10rem 0;
-}
-
-.main-h1 {
+h1{
     text-align: center;
-    font-weight: 4rem;
+    width: 100%;
+    font-weight: bold;
     font-size: 4rem;
+    text-shadow: 0 0 1rem white;
+    margin-bottom: 2rem;
 }
 
 .main-container{
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 0 0 1rem;
-}
-
-
-.fst-sct-main {
+    padding: 2rem 0 2rem;
     display: flex;
-    margin: 0.5rem 2rem;
-    align-items: center;
+    flex-direction: column;
 }
 
-.fst-sct-main p {
+.fst-sct-main{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.fst-sct-main p{
     font-size: 1.7rem;
     margin-left: 1.5rem;
     margin-bottom: 0;
@@ -72,33 +70,39 @@ main {
 
 .p-main{
     font-size: 1.7rem;
-    margin: 1rem 2rem;
+    width: 85%;
     color: white;
     font-family: "inter";
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 
-.snd-sct-main {
+.snd-sct-main{
     display: flex;
     flex-direction: row-reverse;
-    margin: 0.5rem 2rem;
+    width: 85%;
     align-items: center;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 
-.snd-sct-main p {
+.snd-sct-main p{
     font-size: 1.7rem;
     margin-right: 1.5rem;
     color: white;
     font-family: "inter";
 }
 
-.trd-sct-main {
+.trd-sct-main{
     display: flex;
     flex-direction: row;
-    margin: 0.5rem 2rem;
+    width: 85%;
     align-items: center;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 
-.trd-sct-main p {
+.trd-sct-main p{
     font-size: 1.7rem;
     margin-left: 1.5rem;
     color: white;
@@ -111,54 +115,230 @@ main {
     border: 2px solid #F3C842;
 }
 
+/* ----------------pilotos---------------- */
 
-
-
-
-
-
-
-
-input {
-    display: block;
+.pilotos-container{
     width: 90%;
-    margin-left: 5%;
-    padding: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 0.6rem black;
+    padding: 2rem 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilt-sct ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-label {
-    display: block;
-    margin-left: 45%;
-    font-size: 2rem;
-    color: white;
+.pilt-sct ul li{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-items: center;
+    margin: 0 2rem;
+}    
+
+.pilt-sct ul li h2{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
 }
 
-textarea {
-    display: block;
-    width: 90%;
-    align-items: center;
-    margin-left: 5.5%;
-    margin-bottom: 1rem;
-}
-
-iframe {
+.pilt-sct ul li img{
+    justify-content: center;
+    margin: 0 auto 1rem;
     width: 40%;
-    margin-left: 30%;
+    height: auto;
+    box-shadow: 0.4rem 0.5rem 0.5rem black;
+    border: 2px solid #F3C842;
+}
+
+.pilt-sct ul li p{
+    font-size: 1.7rem;
+    color: white;
+    font-family: "inter";
+    text-align: center;
+}
+
+
+
+/* ----------------pistas---------------- */
+
+.pistas-container{
+    width: 95%;
+    margin: 2rem auto;
+    box-shadow: 0 0 0.6rem black;
+    padding: 2rem 0 2rem;
+}
+
+.pistas-container ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 2rem 0 0;
+}
+
+.pistas-container ul li{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem;
+}
+
+.pistas-container ul li h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.pistas-container ul li img{
+    width: 90%;
+    height: auto;
+    box-shadow: 0.4rem 0.5rem 0.5rem black;
+    border: 2px solid #F3C842;
+}
+
+/* ----------------equipos---------------- */
+
+.equipos-container{
+    width: 95%;
+    margin: 2rem auto 9rem;
+    box-shadow: 0 0 0.6rem black;
+    padding: 2rem 0 2rem;
+}
+
+.equipos-container ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 2rem 0 0;
+}
+
+.equipos-container ul li{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.equipos-container ul li h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.equipos-container ul li img{
+    width: 90%;
+    height: auto;
+    box-shadow: 0.4rem 0.5rem 0.5rem black;
+    border: 2px solid #F3C842;
+}
+
+/* ----------------contacto---------------- */
+
+.contact-container{
+    width: 85%;
+    margin: 2rem auto 11rem;
+    box-shadow: 0 0 0.6rem black;
+    padding: 2rem 0 2rem;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "map formulario"
+    ;
+}
+
+.map{
+    grid-area: map;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    grid-area: formulario;
+    margin: 0 auto;
+}
+
+.map h2{
+    width: auto;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.map iframe{
+    width: 80%;
+    box-shadow: 0.4rem 0.5rem 0.5rem black;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    height: 100%;
+    justify-content: center;
+}
+
+.input-labels{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.input-labels div{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 1rem;
+}
+
+.input-labels div input{
+    padding: 0.5rem;
+}
+
+.formulario label{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.message-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.message-area textarea{
+    width: 90%;
 }
 
 .sbmt-btn {
-    width: 10rem;
-    margin-left: 45%;
+    font-size: 2rem;
+    font-weight: 700;;
+    padding: 0.5rem 2rem;
     border-radius: 20%;
-    margin-bottom: 1rem;
+    margin: 2rem;
+    border: 2px solid black;
 }
 
-/* footer */
+.sbmt-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #F3C842;
+}
+
+/* ----------------footer---------------- */
 
 footer{
     margin-top: 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -176,11 +356,11 @@ svg {
     height: 2rem;
 }
 
-/* mobile */
+/* ----------------mobile---------------- */
 
 @media screen and (min-width: 320px) and (max-width: 767px){
     
-    /* header */
+    /* --------header-------- */
     .img-homepage{
         width: 30%;
         height: auto;
@@ -190,17 +370,348 @@ svg {
         font-size: 2.5rem;
     }
 
+    /* --------index/mainpage-------- */
+    h1{
+        font-size: 5rem;
+    }
 
-}
+    .main-container{
+        width: 100%;
+        margin: 2rem auto;
+    }
     
+    .fst-sct-main{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .fst-sct-main p{
+        font-size: 2.5rem;
+        margin: 0;
+        text-align: justify;
+    }
+    
+    .p-main{
+        width: 90%;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
+    .snd-sct-main{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .snd-sct-main p{
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
+    .trd-sct-main{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .trd-sct-main p{
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
+    .imagen-historia{
+        width: 70%;
+        margin-bottom: 1rem;
+    }
 
-/* tablet */
+    /* --------pilotos-------- */
+    .pilotos-container{
+        width: 100%;
+    }
+    
+    .pilt-sct ul li{
+        width: 90%;
+    }    
+
+    .pilt-sct ul li img{
+        width: 70%;
+    }
+    
+    .pilt-sct ul li p{
+        width: 100%;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    /* --------pistas-------- */
+    .pistas-container{
+        width: 100%;
+    }
+    
+    .pistas-container ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pistas-container ul li{
+        width: 80%;
+    }
+    
+    .pistas-container ul li h2{
+        font-size: 3.5rem;
+    }
+
+    /* --------equipos-------- */   
+    .equipos-container{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    
+    .equipos-container ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipos-container ul li{
+        width: 80%;
+    }
+    
+    .equipos-container ul li h2{
+        font-size: 3.5rem;
+    }
+
+    /* --------contacto-------- */
+    .contact-container{
+        width: 100%;
+        margin: 2rem auto 2rem;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "map"
+        "formulario"
+    ;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+    .formulario form{
+        height: 80%;
+    }
+
+    .map{
+        height: 80%;
+    }
+
+    .map h2{
+        font-size: 4rem;
+    }
+
+    .input-labels{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input-labels div{
+        flex-direction: column;
+        width: 90%;
+        margin:0 0 1rem;
+    }
+
+    .input-labels div input{
+        padding: 1.5rem;
+    }
+
+    .formulario label{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .message-area textarea{
+        width: 90%;
+    }
+
+    .sbmt-btn {
+        font-size: 3rem;
+    }
+
+    /* --------footer-------- */
+    footer p{
+        font-size: 2rem;
+    }
+}
+
+
+/* ----------------tablet---------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     
+    /*-----index/mainpage-----*/
+    h1{
+        font-size: 5rem;
+    }
+
+    .main-container{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    
+    .fst-sct-main{
+        width: 90%;
+    }
+    
+    .fst-sct-main p{
+        font-size: 2rem;
+    }
+    
+    .p-main{
+        width: 90%;
+        font-size: 2rem;
+    }
+    
+    .snd-sct-main{
+        width: 90%;
+    }
+    
+    .snd-sct-main p{
+        font-size: 2rem;
+    }
+    
+    .trd-sct-main{
+        width: 90%;
+    }
+    
+    .trd-sct-main p{
+        font-size: 2rem;
+    } */
+    
+    .imagen-historia{
+        width: 40%;
+    }
+
+    /* --------pilotos-------- */
+    .pilotos-container{
+        width: 100%;
+    }
+    
+    .pilt-sct ul li{
+        width: 90%;
+    }    
+
+    .pilt-sct ul li img{
+        width: 60%;
+    }
+    
+    .pilt-sct ul li p{
+        width: 100%;
+        font-size: 2rem;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    /*--------pistas--------*/
+    .pistas-container{
+        width: 100%;
+    }
+    
+    .pistas-container ul{
+        justify-content: space-evenly;
+    }
+
+    .pistas-container ul li{
+        width: 40%;
+    }
+    
+    .pistas-container ul li h2{
+        font-size: 3rem;
+    }
+
+    /* --------equipos-------- */
+    .equipos-container{
+        width: 100%;
+    }
+    
+    .equipos-container ul{
+        justify-content: space-evenly;
+    }
+
+    .equipos-container ul li{
+        width: 40%;
+    }
+    
+    .equipos-container ul li h2{
+        font-size: 3rem;
+    }
+
+    /* --------contacto-------- */
+    .contact-container{
+        width: 100%;
+        margin: 2rem auto 2rem;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "map"
+        "formulario"
+    ;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+    .formulario form{
+        height: 80%;
+    }
+
+    .map{
+        height: 80%;
+    }
+
+    .map h2{
+        font-size: 4rem;
+    }
+
+    .input-labels{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input-labels div{
+        flex-direction: column;
+        width: 90%;
+        margin:0 0 1rem;
+    }
+
+    .input-labels div input{
+        padding: 1.5rem;
+    }
+
+    .formulario label{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .message-area textarea{
+        width: 90%;
+    }
+
+    .sbmt-btn {
+        font-size: 3rem;
+    }
 }
 
-/* desktop */
+/* ----------------desktop---------------- */
 
 @media screen and (min-width: 1024px){
     
