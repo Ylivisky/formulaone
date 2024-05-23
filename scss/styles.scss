@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin media($device){
+    @if $device == mobile{
+        @media screen and (min-width: 320px) and (max-width: 767px){
+            @content;
+        }
+    }
+    @else if $device == tablet{
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            @content;
+        }
+    }
+    @else if $device == desktop{
+        @media screen and (min-width: 1024px){
+            @content;
+        }
+    }
+}
+
+@import 'inicio';
+@import 'pilotos';
+@import 'pistas';
+@import 'equipos';
+@import 'contacto';
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    body{
+        background-color: #BF090C;
+        h1{
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+            text-shadow: 0 0 1rem white;
+            margin-bottom: 2rem;
+            @include media(mobile){
+                font-size: 5rem;
+            }
+            @include media(tablet){
+                font-size: 5rem;
+            }
+            @include media(desktop){
+                font-size: 4rem;
+            }
+        }
+        header{
+            .img-homepage{
+                width: 30%;
+                height: auto;
+            }
+            ul{
+                li{
+                    font-size: 3rem;
+                    text-align: center;
+                    @include media(mobile){
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+        footer{
+            margin-top: 0;
+            width: 100%;
+            p{
+                color: white;
+                margin: 0;
+                text-align: center;
+                font-size: 1.5rem;
+                padding-bottom: 0.5rem;
+                @include media(mobile){
+                    font-size: 2rem;
+                }
+            }
+        }
+        svg{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
