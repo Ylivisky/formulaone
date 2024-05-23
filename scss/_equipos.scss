@@ -1,7 +1,5 @@
 .equipos-container{
-    margin: 2rem auto;
-    box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0;
+    @extend .container;
     @include media(mobile){
         width: 100%;
     }
@@ -41,20 +39,19 @@
                 width: 100%;
                 text-align: center;
                 @include media(mobile){
-                    font-size: 3.5rem;
+                    font-size: map-get($h2-fsize, sm);
                 }
-                @include media(mobile){
-                    font-size: 3rem;
+                @include media(tablet){
+                    font-size: map-get($h2-fsize, md);
                 }
                 @include media(desktop){
-                    font-size: 2.5rem;
+                    font-size: map-get($h2-fsize, lg);
                 }
             }
             img{
+                @extend .images-styles;
                 width: 90%;
                 height: auto;
-                box-shadow: 0.4rem 0.5rem 0.5rem black;
-                border: 2px solid #F3C842;
             }
         }
     }

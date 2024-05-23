@@ -1,7 +1,5 @@
 .main-container{
-    margin: 2rem auto;
-    box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0;
+    @extend .container;
     display: flex;
     flex-direction: column;
     @include media(mobile){
@@ -14,8 +12,7 @@
         width: 80%;
     }
     .imagen-historia{
-        box-shadow: 0.4rem 0.5rem 0.3rem black;
-        border: 2px solid #F3C842;
+        @extend .images-styles;
         @include media(mobile){
             width: 70%;
             margin-bottom: 1rem;
@@ -43,40 +40,36 @@
             width: 85%;
         }
         p{
+            @extend .text;
             margin-left: 1.5rem;
             margin-bottom: 0;
-            color: white;
-            font-family: "inter";
-            text-align: justify;
             @include media(mobile){
-                font-size: 2.5rem;
+                font-size: map-get($p-fsize, sm);
                 margin: 0;
             }
             @include media(tablet){
-                font-size: 2rem;
+                font-size: map-get($p-fsize, md);
             }
             @include media(desktop){
-                font-size: 1.7rem;
+                font-size: map-get($p-fsize, lg);
             }
         }
     }
     .p-main{
-        color: white;
-        font-family: "inter";
+        @extend .text;
         margin: 0 auto;
         padding-top: 1rem;
-        text-align: justify;
         @include media(mobile){
             width: 90%;
-            font-size: 2.5rem;
+            font-size: map-get($p-fsize, sm);
         }
         @include media(tablet){
             width: 90%;
-            font-size: 2rem;
+            font-size: map-get($p-fsize, md);
         }
         @include media(desktop){
             width: 85%;
-            font-size: 1.7rem;
+            font-size: map-get($p-fsize, lg);
         }
     }
     .snd-sct-main{
@@ -96,20 +89,18 @@
             width: 85%;
         }
         p{
+            @extend .text;
             margin-right: 1.5rem;
-            color: white;
-            font-family: "inter";
             margin-bottom: 0;
-            text-align: justify;
             @include media(mobile){
-                font-size: 2.5rem;
+                font-size: map-get($p-fsize, sm);
                 margin: 0 auto;
             }
             @include media(tablet){
-                font-size: 2rem;
+                font-size: map-get($p-fsize, md);
             }
             @include media(desktop){
-                font-size: 1.7rem;
+                font-size: map-get($p-fsize, lg);
             }
         }
     }
@@ -130,20 +121,18 @@
             width: 85%;
         }
         p{
+            @extend .text;
             margin-left: 1.5rem;
-            color: white;
-            font-family: "inter";
             margin-bottom: 0;
-            text-align: justify;
             @include media(mobile){
-                font-size: 2.5rem;
+                font-size: map-get($p-fsize, sm);
                 margin: 0 auto;
             }
             @include media(tablet){
-                font-size: 2rem;
+                font-size: map-get($p-fsize, md);
             }
             @include media(desktop){
-                font-size: 1.7rem;
+                font-size: map-get($p-fsize, lg);
             }
         }
     }

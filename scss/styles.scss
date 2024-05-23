@@ -22,6 +22,8 @@
     }
 }
 
+@import 'extendsAndMaps';
+@import 'colors';
 @import 'inicio';
 @import 'pilotos';
 @import 'pistas';
@@ -32,21 +34,21 @@ html{
     font-size: 62.5%;
     /* 1rem = 10px */
     body{
-        background-color: #BF090C;
+        background-color: $rojo;
         h1{
             text-align: center;
             width: 100%;
             font-weight: bold;
-            text-shadow: 0 0 1rem white;
+            text-shadow: 0 0 1rem $blanco;
             margin-bottom: 2rem;
             @include media(mobile){
-                font-size: 5rem;
+                font-size: map-get($h1-fsize, sm);
             }
             @include media(tablet){
-                font-size: 5rem;
+                font-size: map-get($h1-fsize, md);
             }
             @include media(desktop){
-                font-size: 4rem;
+                font-size: map-get($h1-fsize, lg);
             }
         }
         header{
@@ -68,7 +70,7 @@ html{
             margin-top: 0;
             width: 100%;
             p{
-                color: white;
+                color: $blanco;
                 margin: 0;
                 text-align: center;
                 font-size: 1.5rem;
