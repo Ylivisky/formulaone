@@ -45,7 +45,7 @@ h1{
 .main-container{
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -62,6 +62,7 @@ h1{
     margin-bottom: 0;
     color: white;
     font-family: "inter";
+    text-align: justify;
 }
 
 .p-main{
@@ -69,6 +70,7 @@ h1{
     font-family: "inter";
     margin: 0 auto;
     padding-top: 1rem;
+    text-align: justify;
 }
 
 .snd-sct-main{
@@ -83,6 +85,8 @@ h1{
     margin-right: 1.5rem;
     color: white;
     font-family: "inter";
+    margin-bottom: 0;
+    text-align: justify;
 }
 
 .trd-sct-main{
@@ -97,6 +101,8 @@ h1{
     margin-left: 1.5rem;
     color: white;
     font-family: "inter";
+    margin-bottom: 0;
+    text-align: justify;
 }
 
 .imagen-historia{
@@ -109,22 +115,20 @@ h1{
 .pilotos-container{
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 2rem 0;
 }
 .pilt-sct ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
 }
 
 .pilt-sct ul li{
     display: flex;
     flex-direction: column;
     width: 45%;
-    justify-items: center;
-    margin: 0 2rem;
+    margin: 0 2rem 1rem;
 }    
 
 .pilt-sct ul li h2{
@@ -145,22 +149,22 @@ h1{
     color: white;
     font-family: "inter";
     text-align: center;
+    margin-bottom: 0;
 }
-
-
 
 /* ----------------pistas---------------- */
 
 .pistas-container{
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0;
 }
 
 .pistas-container ul{
     display: flex;
     flex-flow: row wrap;
-    margin: 0 2rem 0 0;
+    margin: 0 2rem;
+    padding: 0;
 }
 
 .pistas-container ul li{
@@ -185,15 +189,16 @@ h1{
 /* ----------------equipos---------------- */
 
 .equipos-container{
-    margin: 2rem auto 2rem;
+    margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0;
 }
 
 .equipos-container ul{
     display: flex;
     flex-flow: row wrap;
-    margin: 0 2rem 0 0;
+    margin: 0 2rem;
+    padding: 0;
 }
 
 .equipos-container ul li{
@@ -220,7 +225,7 @@ h1{
 .contact-container{
     margin: 2rem auto;
     box-shadow: 0 0 0.6rem black;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0 3.5rem;
 }
 
 .contact-grid{
@@ -236,7 +241,6 @@ h1{
 
 .formulario{
     grid-area: formulario;
-    margin: 0 auto;
 }
 
 .map h2{
@@ -253,19 +257,24 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto 0;
     height: 100%;
     justify-content: center;
 }
 
 .input-labels{
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.input-labels div{
+.input-columns{
+    display: flex;
+}
+
+.input-columns div{
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 0 1.5rem 1rem;
 }
 
 .formulario label{
@@ -279,15 +288,20 @@ h1{
     align-items: center;
 }
 
-.message-area textarea{
-    width: 90%;
+.message-area div{
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.message-area div textarea{
+    width: 100%;
 }
 
 .sbmt-btn {
     font-weight: 700;;
     padding: 0.5rem 2rem;
     border-radius: 20%;
-    margin: 2rem;
+    margin: 1.5rem;
     border: 2px solid black;
 }
 
@@ -450,7 +464,7 @@ svg {
 
     .contact-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
         grid-template-areas: 
         "map"
         "formulario"
@@ -458,15 +472,12 @@ svg {
     }
 
     .formulario{
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .formulario form{
-        height: 80%;
-    }
-
-    .map{
-        height: 80%;
+        margin-top: 2rem;
     }
 
     .map h2{
@@ -479,14 +490,25 @@ svg {
         width: 100%;
     }
 
-    .input-labels div{
+    .input-columns{
         flex-direction: column;
-        width: 90%;
-        margin:0 0 1rem;
     }
 
-    .input-labels div input{
+    .input-labels div{
+        width: 100%;
+        margin: 0 0 0.5rem;
+    }
+
+    .input-labels input{
         padding: 1.5rem;
+    }
+
+    .input-labels input::placeholder{
+        font-size: 2rem;
+    }
+
+    .message-area div{
+        padding: 0;
     }
 
     .formulario label{
@@ -612,7 +634,7 @@ svg {
 
     .contact-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
         grid-template-areas: 
         "map"
         "formulario"
@@ -620,19 +642,21 @@ svg {
     }
 
     .formulario{
-        width: 90%;
+        width: 100%;
     }
 
     .formulario form{
-        height: 80%;
-    }
-
-    .map{
-        height: 80%;
+        width: 80%;
+        margin: 2rem auto 0;
     }
 
     .map h2{
         font-size: 4rem;
+    }
+
+    .input-columns{
+        flex-direction: column;
+        width: 100%;
     }
 
     .input-labels{
@@ -641,17 +665,27 @@ svg {
         width: 100%;
     }
 
-    .input-labels div{
-        width: 90%;
+    .input-columns div{
+        width: 100%;
+        margin: 0;
     }
 
-    .input-labels div input{
+    .input-columns div input{
         padding: 1.5rem;
+        width: 100%;
+    }
+
+    .input-columns div input::placeholder{
+        font-size: 2rem;
     }
 
     .formulario label{
         font-size: 3rem;
         text-align: center;
+    }
+
+    .message-area div{
+        padding: 0;
     }
 
     .sbmt-btn {
@@ -721,10 +755,6 @@ svg {
     .pistas-container{
         width: 95%;
     }
-    
-    .pistas-container ul{
-        justify-content: center;
-    }
 
     .pistas-container ul li{
         width: 20%;
@@ -737,10 +767,7 @@ svg {
     /* --------equipos-------- */ 
     .equipos-container{
         width: 95%;
-    }
-    
-    .equipos-container ul{
-        justify-content: center;
+        margin-bottom: 7rem;
     }
 
     .equipos-container ul li{
@@ -754,6 +781,7 @@ svg {
     /* --------contacto-------- */
     .contact-container{
         width: 85%;
+        margin-bottom: 9rem;
     }
 
     .contact-grid{
@@ -768,17 +796,16 @@ svg {
         font-size: 3.5rem;
     }
 
-    .input-labels{
-        flex-flow: row wrap;
-        justify-content: center;
+    .input-columns div{
+        width: 50%;
     }
 
-    .input-labels div{
-        width: 45%;
-    }
-
-    .input-labels div input{
+    .input-labels input{
         padding: 0.7rem;
+    }
+
+    .input-labels input::placeholder{
+        font-size: 1.5rem;
     }
 
     .formulario label{
@@ -787,12 +814,6 @@ svg {
 
     .sbmt-btn{
         font-size: 2rem;
-    }
-
-    /* --------footer------- */
-    .lfooter{
-        position: absolute;
-        bottom: 0;
     }
 }
 
