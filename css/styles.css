@@ -1,13 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main-container {
+/* https://color.adobe.com/es/search?q=formula%201 */
+.container, .contact-container, .equipos-container, .pistas-container, .pilotos-container, .main-container {
   margin: 2rem auto;
-  box-shadow: 0 0 0.6rem black;
+  box-shadow: 0 0 0.6rem #120E10;
   padding: 2rem 0;
+}
+
+.images-styles, .equipos-container ul li img, .pistas-container ul li img, .pilotos-container .pilt-sct ul li img, .main-container .imagen-historia {
+  box-shadow: 0.4rem 0.5rem 0.5rem #120E10;
+  border: 2px solid #F3C842;
+}
+
+.text, .pilotos-container .pilt-sct ul li p, .main-container .trd-sct-main p, .main-container .snd-sct-main p, .main-container .p-main, .main-container .fst-sct-main p {
+  color: #FFFFFF;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: justify;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
 }
@@ -25,10 +43,6 @@
   .main-container {
     width: 80%;
   }
-}
-.main-container .imagen-historia {
-  box-shadow: 0.4rem 0.5rem 0.3rem black;
-  border: 2px solid #F3C842;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-container .imagen-historia {
@@ -71,9 +85,6 @@
 .main-container .fst-sct-main p {
   margin-left: 1.5rem;
   margin-bottom: 0;
-  color: white;
-  font-family: "inter";
-  text-align: justify;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-container .fst-sct-main p {
@@ -92,11 +103,8 @@
   }
 }
 .main-container .p-main {
-  color: white;
-  font-family: "inter";
   margin: 0 auto;
   padding-top: 1rem;
-  text-align: justify;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-container .p-main {
@@ -141,10 +149,7 @@
 }
 .main-container .snd-sct-main p {
   margin-right: 1.5rem;
-  color: white;
-  font-family: "inter";
   margin-bottom: 0;
-  text-align: justify;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-container .snd-sct-main p {
@@ -187,10 +192,7 @@
 }
 .main-container .trd-sct-main p {
   margin-left: 1.5rem;
-  color: white;
-  font-family: "inter";
   margin-bottom: 0;
-  text-align: justify;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main-container .trd-sct-main p {
@@ -209,11 +211,6 @@
   }
 }
 
-.pilotos-container {
-  margin: 2rem auto;
-  box-shadow: 0 0 0.6rem black;
-  padding: 2rem 0;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .pilotos-container {
     width: 100%;
@@ -254,14 +251,26 @@
 .pilotos-container .pilt-sct ul li h2 {
   width: 100%;
   text-align: center;
-  font-size: 3.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pilotos-container .pilt-sct ul li h2 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .pilotos-container .pilt-sct ul li h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pilotos-container .pilt-sct ul li h2 {
+    font-size: 2.5rem;
+  }
 }
 .pilotos-container .pilt-sct ul li img {
   justify-content: center;
   margin: 0 auto 1rem;
   height: auto;
-  box-shadow: 0.4rem 0.5rem 0.5rem black;
-  border: 2px solid #F3C842;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .pilotos-container .pilt-sct ul li img {
@@ -279,8 +288,6 @@
   }
 }
 .pilotos-container .pilt-sct ul li p {
-  color: white;
-  font-family: "inter";
   text-align: center;
   margin-bottom: 0;
 }
@@ -306,11 +313,6 @@
   }
 }
 
-.pistas-container {
-  margin: 2rem auto;
-  box-shadow: 0 0 0.6rem black;
-  padding: 2rem 0;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .pistas-container {
     width: 100%;
@@ -386,15 +388,8 @@
 .pistas-container ul li img {
   width: 90%;
   height: auto;
-  box-shadow: 0.4rem 0.5rem 0.5rem black;
-  border: 2px solid #F3C842;
 }
 
-.equipos-container {
-  margin: 2rem auto;
-  box-shadow: 0 0 0.6rem black;
-  padding: 2rem 0;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .equipos-container {
     width: 100%;
@@ -408,7 +403,6 @@
 @media screen and (min-width: 1024px) {
   .equipos-container {
     width: 95%;
-    margin-bottom: 7rem;
   }
 }
 .equipos-container ul {
@@ -458,7 +452,7 @@
     font-size: 3.5rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .equipos-container ul li h2 {
     font-size: 3rem;
   }
@@ -471,13 +465,9 @@
 .equipos-container ul li img {
   width: 90%;
   height: auto;
-  box-shadow: 0.4rem 0.5rem 0.5rem black;
-  border: 2px solid #F3C842;
 }
 
 .contact-container {
-  margin: 2rem auto;
-  box-shadow: 0 0 0.6rem black;
   padding: 2rem 0 3.5rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -493,7 +483,6 @@
 @media screen and (min-width: 1024px) {
   .contact-container {
     width: 85%;
-    margin-bottom: 9rem;
   }
 }
 .contact-container .contact-grid {
@@ -547,7 +536,7 @@
 }
 .contact-container .contact-grid .map iframe {
   width: 80%;
-  box-shadow: 0.4rem 0.5rem 0.5rem black;
+  box-shadow: 0.4rem 0.5rem 0.5rem #120E10;
 }
 .contact-container .contact-grid .formulario {
   grid-area: formulario;
@@ -712,7 +701,7 @@
   padding: 0.5rem 2rem;
   border-radius: 20%;
   margin: 1.5rem;
-  border: 2px solid black;
+  border: 2px solid #120E10;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contact-container .contact-grid .formulario form .sbmt-btn {
@@ -730,8 +719,8 @@
   }
 }
 .contact-container .contact-grid .formulario form .sbmt-btn:hover {
-  background-color: black;
-  color: white;
+  background-color: #120E10;
+  color: #FFFFFF;
   border: 2px solid #F3C842;
 }
 
@@ -745,8 +734,10 @@ html body {
 html body h1 {
   text-align: center;
   width: 100%;
-  font-weight: bold;
-  text-shadow: 0 0 1rem white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0 0 1rem #FFFFFF;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -756,7 +747,7 @@ html body h1 {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   html body h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -778,11 +769,13 @@ html body header ul li {
   }
 }
 html body footer {
+  position: relative;
+  bottom: 0;
   margin-top: 0;
   width: 100%;
 }
 html body footer p {
-  color: white;
+  color: #FFFFFF;
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
