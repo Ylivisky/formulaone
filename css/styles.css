@@ -730,6 +730,9 @@ html {
 }
 html body {
   background-color: #BF090C;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 html body h1 {
   text-align: center;
@@ -769,9 +772,7 @@ html body header ul li {
   }
 }
 html body footer {
-  position: relative;
-  bottom: 0;
-  margin-top: 0;
+  margin-top: auto;
   width: 100%;
 }
 html body footer p {

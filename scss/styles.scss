@@ -35,6 +35,9 @@ html{
     /* 1rem = 10px */
     body{
         background-color: $rojo;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         h1{
             text-align: center;
             width: 100%;
@@ -69,9 +72,7 @@ html{
             }
         }
         footer{
-            position: relative;
-            bottom: 0;
-            margin-top: 0;
+            margin-top: auto;
             width: 100%;
             p{
                 color: $blanco;
