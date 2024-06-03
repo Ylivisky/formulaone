@@ -21,6 +21,6 @@
          - Equipos
          - Contacto
        - 2 sobre otros temas
-         - Colores
+         - Colores y Fuentes
          - Extend y Maps
 5. Optimice todas las imagenes   
